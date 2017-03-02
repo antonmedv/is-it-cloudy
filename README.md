@@ -2,6 +2,8 @@
 
 Node command line tool to printing weather info.
 
+<p align="center"><img width="551" alt="Bash prompt with weather info" src="https://cloud.githubusercontent.com/assets/141232/23497068/0d46f7dc-ff54-11e6-88e5-9ca9ff9180e7.png"></p>
+
 ## Installation
 
 ```sh
