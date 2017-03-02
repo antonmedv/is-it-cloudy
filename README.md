@@ -27,6 +27,7 @@ npm install -g is-it-cloudy
 ## Example
 
 You can use this command to display weather in bash prompt.
+
 Add next command to crontab to update status every 30 minutes:
 
 ```sh
