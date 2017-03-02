@@ -17,22 +17,28 @@ npm install -g is-it-cloudy
 
   Options:
 
-    -h, --help         output usage information
-    -V, --version      output the version number
-    --city [city]      City name
-    --appid [id]       App id for openweathermap.org
-    -f, --fetch        Do not check mtime, fetch every time
-    --format [format]  Format output, %e for emoji, %t for temp
+    -h, --help             output usage information
+    -V, --version          output the version number
+    -c, --city [city]      city name for weather info
+    -a, --appid [id]       app id for openweathermap.org
+    -f, --format [format]  format output, %e for emoji, %t for temp
 ```
 
 ## Example
 
 You can use this command to display weather in bash prompt.
+Add next command to crontab to update status every 30 minutes:
+
+```sh
+0,30 * * * * /usr/local/bin/node /usr/local/bin/is-it-cloudy > ~/.is-it-cloudy
+```
+
+Add to your *.profile* file:
 
 ```sh
 function set_ps1 {
-	PROMPT_WHEATHER=$(is-it-cloudy --format '%e %t');
-  export PS1="${PROMPT_WHEATHER} \w\$"
+  weather=$(cat ~/.is-it-cloudy);
+  export PS1="${weather} \w\$"
 }
 
 export PROMPT_COMMAND="set_ps1;"
