@@ -1,0 +1,25 @@
+{
+  "name": "is-it-cloudy",
+  "version": "1.0.0",
+  "description": "Get weather emoji",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "is-it-cloudy": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elfet/is-it-cloudy.git"
+  },
+  "author": "Anton Medvedev <anton@medv.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elfet/is-it-cloudy/issues"
+    },
+    "homepage": "https://github.com/elfet/is-it-cloudy#readme",
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}
